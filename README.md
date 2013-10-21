@@ -20,9 +20,47 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Folder Architecture
 - File Names
-- Formatting
+- General Formatting
 - Anatomy/Structure
 - Selectors
 - Properties
 - Comments
 - Tools
+
+## Folder Architecture
+### WIP
+
+## File Names
+### WIP
+
+## General Formatting
+
+### Spacing
+
+- Use 4 spaces for indentation. Don't use tab.
+- Don't mix spaces and tabs.
+- Remove all spaces at the end of the line.
+- Use space between the selector and the bracket.
+- Use space between property and value.
+- Always leave a blank line between rules
+
+### Selectors & Properties
+
+- Write one selector per line
+
+```
+.selector1,
+.selector2,
+.selector3 {
+    property: value;
+}
+```
+
+- Write one property per line
+
+```
+.selector1 {
+	property: value;
+    property: value;
+}
+```
