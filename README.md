@@ -79,7 +79,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Separate words with Hyphen. Don't use camelCase or underline.
 
-```
+```css
 /* DON'T */
 .homePage
 .box_registracion
@@ -89,7 +89,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 /* DO */
 .home-page
 .registration-box 
-
 ```
 
 - Use app-prefixes ONLY for cross-application stylesheets or reusable widgets.
@@ -108,6 +107,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - *Avoid ID selectors* as much as you can.
 
-> Declarations defined for an ID selector can't be reused.
+Declarations defined for an ID selector can't be reused.
 
 
