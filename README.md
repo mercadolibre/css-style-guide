@@ -104,7 +104,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 /* DO */
 .commons-header
 .ml-footer
-``
+```
 
 - *Avoid ID selectors* as much as you can.
 
