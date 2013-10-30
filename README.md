@@ -105,8 +105,44 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 .ml-footer
 ```
 
-- *Avoid ID selectors* as much as you can.
+- **Avoid ID selectors** as much as you can.
 
-⋅⋅⋅Declarations defined for an ID selector can't be reused.
+	Declarations defined for an ID selector can't be reused.
+
+- Avoid tag selectors unless is for extending another selector.
+
+	Tag selectors are not specific enough.
+
+## Properties
+
+- Alphabetize declarations.
+
+- Whenever possible, use shorthands.
+
+```css
+/* DON'T */
+.selector {
+	padding-bottom: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0;
+}
+```
+
+```css
+/* DO */
+.selector {
+	padding: 0 1em 2em;
+}
+```
+
+- Omit unit specification when value is "0".
+
+```css
+/* DO */
+margin: 0;
+padding: 0;
+```
+
 
 
