@@ -39,43 +39,56 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Use 4 spaces for indentation. Don't use tab.
 
+
 - Don't mix spaces and tabs.
+
 
 - Remove all spaces at the end of the line.
 
+
 - Use space between the selector and the bracket.
+
 
 - Use space between property and value.
 
+
 - Always leave a blank line between rules
+
+
 
 ### Selectors & Properties
 
-- Write one selector per line
+- Write one selector per line.
 
-```css
-.selector1,
-.selector2,
-.selector3 {
-    property: value;
-}
-```
+	```css
+	/* DO */
+	.selector1,
+	.selector2,
+	.selector3 {
+	    property: value;
+	}
+	```
 
-- Write one property per line
 
-```css
-.selector1 {
-	property: value;
-    property: value;
-}
-```
+- Write one property per line.
+
+	```css
+	/* DO */
+	.selector1 {
+		property: value;
+	    property: value;
+	}
+	```
+
 
 ## Anatomy/Structure
 ### WIP
 
+
 ## Selectors
 
 - Only in English. 
+
 
 - Separate words with Hyphen. Don't use camelCase or underline.
 
@@ -91,58 +104,70 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	.registration-box 
 	```
 
+
 - Use app-prefixes ONLY for cross-application stylesheets or reusable widgets.
 
-```css
-/* DON'T */
-.cho-header
-.myml-sales
-```
+	```css
+	/* DON'T */
+	.cho-header
+	.myml-sales
+	```
 
-```css
-/* DO */
-.commons-header
-.ml-footer
-```
+	```css
+	/* DO */
+	.commons-header
+	.ml-footer
+	```
+
 
 - **Avoid ID selectors** as much as you can.
 
 	Declarations defined for an ID selector can't be reused.
 
+
 - Avoid tag selectors unless is for extending another selector.
 
 	Tag selectors are not specific enough.
+
 
 ## Properties
 
 - Alphabetize declarations.
 
+
 - Whenever possible, use shorthands.
 
-```css
-/* DON'T */
-.selector {
-	padding-bottom: 2em;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-top: 0;
-}
-```
+	```css
+	/* DON'T */
+	.selector {
+		padding-bottom: 2em;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-top: 0;
+	}
+	```
 
-```css
-/* DO */
-.selector {
-	padding: 0 1em 2em;
-}
-```
+	```css
+	/* DO */
+	.selector {
+		padding: 0 1em 2em;
+	}
+	```
+
 
 - Omit unit specification when value is "0".
 
-```css
-/* DO */
-margin: 0;
-padding: 0;
-```
+	```css
+	/* DON'T */
+	margin: 0em;
+	padding: 0px;
+	```
+
+	```css
+	/* DO */
+	margin: 0;
+	padding: 0;
+	```
 
 
 
