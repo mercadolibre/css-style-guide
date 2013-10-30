@@ -38,10 +38,15 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 ### Spacing
 
 - Use 4 spaces for indentation. Don't use tab.
+
 - Don't mix spaces and tabs.
+
 - Remove all spaces at the end of the line.
+
 - Use space between the selector and the bracket.
+
 - Use space between property and value.
+
 - Always leave a blank line between rules
 
 ### Selectors & Properties
@@ -64,3 +69,30 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
     property: value;
 }
 ```
+
+## Anatomy/Structure
+### WIP
+
+## Selectors
+
+- Only in English. 
+
+- Separate words with Hyphen. Don't use camelCase or underline
+
+```
+/* BAD */
+.homePage,
+.box_registracion {
+	
+}
+```
+
+```
+/* GOOD */
+.home-page.
+.registration-box {
+	
+}
+```
+
+
