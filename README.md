@@ -53,7 +53,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Write one selector per line
 
-```
+```css
 .selector1,
 .selector2,
 .selector3 {
@@ -63,7 +63,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Write one property per line
 
-```
+```css
 .selector1 {
 	property: value;
     property: value;
@@ -85,7 +85,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 .box_registracion
 ```
 
-```
+```css
 /* DO */
 .home-page
 .registration-box 
@@ -93,13 +93,13 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Use app-prefixes ONLY for cross-application stylesheets or reusable widgets.
 
-```
+```css
 /* DON'T */
 .cho-header
 .myml-sales
 ```
 
-```
+```css
 /* DO */
 .commons-header
 .ml-footer
@@ -107,6 +107,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - *Avoid ID selectors* as much as you can.
 
-Declarations defined for an ID selector can't be reused.
+⋅⋅⋅Declarations defined for an ID selector can't be reused.
 
 
