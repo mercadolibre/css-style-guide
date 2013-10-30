@@ -77,22 +77,36 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Only in English. 
 
-- Separate words with Hyphen. Don't use camelCase or underline
+- Separate words with Hyphen. Don't use camelCase or underline.
 
 ```
-/* BAD */
+/* DON'T */
 .homePage,
-.box_registracion {
-	
-}
+.box_registracion {}
 ```
 
 ```
-/* GOOD */
-.home-page.
-.registration-box {
-	
-}
+/* DO */
+.home-page,
+.registration-box {}
+
 ```
+
+- Use app-prefixes ONLY for cross-application stylesheets or reusable widgets.
+
+```
+/* DON'T */
+.cho-header,
+.myml-sales {}
+```
+
+```
+/* DO */
+.commons-header,
+.ml-footer {}
+``
+
+- *Avoid ID selectors* as much as you can.
+<small>Declarations defined for an ID selector can't be reused.</small>
 
 
