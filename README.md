@@ -79,17 +79,17 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Separate words with Hyphen. Don't use camelCase or underline.
 
-```css
-/* DON'T */
-.homePage
-.box_registracion
-```
+	```css
+	/* DON'T */
+	.homePage
+	.box_registracion
+	```
 
-```css
-/* DO */
-.home-page
-.registration-box 
-```
+	```css
+	/* DO */
+	.home-page
+	.registration-box 
+	```
 
 - Use app-prefixes ONLY for cross-application stylesheets or reusable widgets.
 
