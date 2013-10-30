@@ -122,12 +122,12 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - **Avoid ID selectors** as much as you can.
 
-	Declarations defined for an ID selector can't be reused.
+	_Declarations defined for an ID selector can't be reused._
 
 
 - Avoid tag selectors unless is for extending another selector.
 
-	Tag selectors are not specific enough.
+	_Tag selectors are not specific enough._
 
 
 ## Properties
@@ -170,4 +170,26 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	```
 
 
+- Omit the "0" when value is between 0 and 1.
 
+	```css
+	/* DON'T */
+	margin: 0.5em;
+	```
+
+	```css
+	/* DO */
+	margin: .5em;
+	```
+
+- Use Hexadecimal code for colors. 
+
+	_(aca falta cuantos caracteres)_
+
+- Use rgba for background colors.
+	
+	_Take advantage of the opacity feature._
+
+- Always use ";" at the end of every declaration.
+
+- Don't use `!important`.
