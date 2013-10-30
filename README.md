@@ -104,7 +104,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 /* DO */
 .commons-header,
 .ml-footer {}
-``
+```
 
 - *Avoid ID selectors* as much as you can.
 <small>Declarations defined for an ID selector can't be reused.</small>
