@@ -190,6 +190,8 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	
 	_Take advantage of the opacity feature._
 
-- Always use ";" at the end of every declaration.
+- Always use `;` at the end of every declaration.
 
 - Don't use `!important`.
+
+
