@@ -20,7 +20,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Folder Architecture 
 - File Names
-- [General Formatting](#formatting)
+- [General Formatting](#general-formatting)
 - Anatomy/Structure
 - [Selectors](#selectors)
 - [Properties](#properties)
