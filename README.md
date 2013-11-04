@@ -18,20 +18,22 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Table of contents
 
-- Folder Architecture
+- Folder Architecture 
 - File Names
-- General Formatting
+- [General Formatting](#formatting)
 - Anatomy/Structure
-- Selectors
-- Properties
+- [Selectors](#selectors)
+- [Properties](#properties)
 - Comments
 - Tools
 
 ## Folder Architecture
-### WIP
+
+	(WIP)
 
 ## File Names
-### WIP
+
+	(WIP)
 
 ## General Formatting
 
@@ -82,7 +84,8 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 
 ## Anatomy/Structure
-### WIP
+	
+	(WIP)
 
 
 ## Selectors
@@ -194,4 +197,17 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Don't use `!important`.
 
+## Comments
 
+	(WIP)
+
+## Tools
+
+	(WIP)
+
+
+## License
+
+Licensed under the MIT license.
+
+Copyright (c) 2013 MercadoLibre, http://www.mercadolibre.com/
