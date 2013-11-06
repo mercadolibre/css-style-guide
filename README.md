@@ -212,7 +212,16 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Comments
 
-	(WIP)
+-Comment whenever necessary to explain the code.
+
+
+- Comment on a property if required.
+
+
+- Comment magic numbers (values ​​with no apparent sense, explain how you arrived at that number) 
+
+
+- No prefixes Comment
 
 ## Tools
 
