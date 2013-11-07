@@ -48,30 +48,19 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	component-name.css
 	```
 
-- Use lowercase.
-
-	```css
-	/* DON'T */
-	baseIe7.css	
-	```
-
-	```css
-	/* DO */
-	base-ie7.css
-	```
-
 - Separate words with Hyphen. Don't use camelCase or underline. 
 	
 	```css
 	/* DON'T */
+	baseIe7.css	
 	paymentMethods.css	
 	```
 
 	```css
 	/* DO */
+	base-ie7.css
 	payment-methods.css
 	```
-
 
 - Name your stylesheet as your component name.  
 	
@@ -280,7 +269,8 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	.selector {
 		-webkit-border-radius: 3px; /* Safari */
 	}
-	``
+	```
+
 
 ### Comments types
 
