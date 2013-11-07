@@ -222,7 +222,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	Use this format for meaningful separations of code.
 
 	```css
-	/* Subsección
+	/* Sidebar
 	---------------------------------------------------------------*/
 	```
 
