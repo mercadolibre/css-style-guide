@@ -24,7 +24,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 - Anatomy/Structure
 - [Selectors](#selectors)
 - [Properties](#properties)
-- Comments
+- [Comments](#comments)
 - Tools
 
 ## Folder Architecture
@@ -205,7 +205,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ### Comments types
 
-- Component header
+- **Component header**
 
 	Use this as a header for every stylesheet or component
 
@@ -217,7 +217,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	  */
 	```
 
-- Block separator
+- **Block separator**
 
 	Use this format for meaningful separations of code.
 
@@ -226,7 +226,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	---------------------------------------------------------------*/
 	```
 
-- Inline comment
+- **Inline comment**
 
 	Use regular comment formatting for small descriptions of properties or rules.
 
@@ -244,7 +244,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	}
 	```
 
-	And properties that apparently make not sense:
+	And properties that apparently make no sense:
 
 	```css
 	.payment-methods {
