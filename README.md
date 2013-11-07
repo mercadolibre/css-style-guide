@@ -205,44 +205,44 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ### Comments types
 
-	- Component header
+- Component header
 
-		Use this as a header for every stylesheet or component
+	Use this as a header for every stylesheet or component
 
-		```css
-		 /**
-		  * Component Name
-		  * @authors: pmontesano, hmammana, ndevalle
-		  * @description: write here a small description of what the component does, where is used, etc.
-		  */
-		```
+	```css
+	 /**
+	  * Component Name
+	  * @authors: pmontesano, hmammana, ndevalle
+	  * @description: write here a small description of what the component does, where is used, etc.
+	  */
+	```
 
-	- Block separator
+- Block separator
 
-		Use this format for meaningful separations of code.
+	Use this format for meaningful separations of code.
 
-		```css
-		/* Subsección
-		---------------------------------------------------------------*/
-		```
+	```css
+	/* Subsección
+	---------------------------------------------------------------*/
+	```
 
-	- Inline comment
+- Inline comment
 
-		Use regular comment formatting for small descriptions of properties or rules.
+	Use regular comment formatting for small descriptions of properties or rules.
 
-		```css
-		.ch-price {
-        	line-height: 1em; /* 16px */
-		}
-		```
+	```css
+	.ch-price {
+    	line-height: 1em; /* 16px */
+	}
+	```
 
-		_Always comment "magic numbers"._
+	_Always comment "magic numbers"._
 
-		```css
-		.ch-box {
-		        max-width: 975px; /* totally arbitrary. trying to not break no-printer message */
-		}
-		```
+	```css
+	.ch-box {
+	        max-width: 975px; /* totally arbitrary. trying to not break no-printer message */
+	}
+	```
 
 
 
