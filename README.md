@@ -199,7 +199,53 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Comments
 
-	(WIP)
+- All your code should be documented.
+
+- Use single-line comment to add hints, notes, suggestions or warnings.
+
+### Comments types
+
+	#### Component header
+
+		Use this as a header for every stylesheet or component
+
+		```css
+		 /**
+		  * Component Name
+		  * @authors: pmontesano, hmammana, ndevalle
+		  * @description: write here a small description of what the component does, where is used, etc.
+		  */
+		 ```
+
+	#### Block separator
+
+		Use this format for meaningful separations of code.
+
+		```css
+		/* Subsección
+		---------------------------------------------------------------*/
+		```
+
+	#### Inline comment
+
+		Use regular comment formatting for small descriptions of properties or rules.
+
+		```css
+		.ch-price {
+        	line-height: 1em; /* 16px */
+		}
+		```
+
+		_Always comment "magic numbers"._
+
+		```css
+		.ch-box {
+		        max-width: 975px; /* totally arbitrary. trying to not break no-printer message */
+		}
+		```
+
+
+
 
 ## Tools
 
