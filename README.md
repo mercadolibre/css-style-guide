@@ -33,7 +33,54 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## File Names
 
-	(WIP)
+- Css base: base.css (all clases and elements commons of the project)
+
+
+- Don't use project's name for css base. 
+
+	```css
+	/* DON'T */ 
+	sales.css
+	checkout.css
+	```
+
+	```css
+	/* DO */
+	base.css	
+	component-name.css
+	```
+
+- Lowercase names and scripted the medium as separator.  
+
+	```css
+	/* DON'T */
+	baseIe7.css	
+	```
+
+	```css
+	/* DO */
+	base-ie7.css
+	```
+
+- Component names from more than one word. 
+	
+	```css
+	/* DON'T */
+	paymentMethods.css	
+	```
+
+	```css
+	/* DO */
+	payment-methods.css
+	```
+
+
+- Name the components by name.  
+	
+	```css
+	/* DO */
+	bookmarks.css
+	```
 
 ## General Formatting
 
@@ -203,6 +250,17 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Use single-line comment to add hints, notes, suggestions or warnings.
 
+- Comment whenever necessary to explain the code.
+
+- Don't comment on vendor-prefixes.
+
+	```css
+	/* DON'T */
+	.selector {
+		-webkit-border-radius: 3px; /* Safari */
+	}
+	``
+
 ### Comments types
 
 - **Component header**
@@ -253,8 +311,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
         text-align: left; /* just in case the container has text-align:right */     
 	}
 	```
-
-
 
 
 
