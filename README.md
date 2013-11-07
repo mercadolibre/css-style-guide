@@ -212,7 +212,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Comments
 
--Comment whenever necessary to explain the code.
+- Comment whenever necessary to explain the code.
 
 
 - Comment on a property if required.
