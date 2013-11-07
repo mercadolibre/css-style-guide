@@ -213,7 +213,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	 /**
 	  * Component Name
 	  * @authors: pmontesano, hmammana, ndevalle
-	  * @description: write here a small description of what the component does, where is used, etc.
+	  * @description: small description of what the component does, where is used, etc.
 	  */
 	```
 
@@ -236,13 +236,25 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	}
 	```
 
-	_Always comment "magic numbers"._
+	Always comment values that might seem "[magic](https://github.com/csswizardry/CSS-Guidelines#magic-numbers-and-absolutes)":
 
 	```css
-	.ch-box {
-	        max-width: 975px; /* totally arbitrary. trying to not break no-printer message */
+	.form-actions {
+	    margin-left: 175px; /* label width + 15px */
 	}
 	```
+
+	And properties that apparently make not sense:
+
+	```css
+	.payment-methods {
+	    display: inline-block;
+	    height: 20px; /* default value, exceptions added to each logo */
+        text-align: left; /* just in case the container has text-align:right */     
+	}
+	```
+
+
 
 
 
