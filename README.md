@@ -33,7 +33,42 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## File Names
 
-	(WIP)
+- Css base: base.css (all clases and elements commons of the project)
+
+
+- Don't use project's name for css base. 
+
+	/* DON'T */ 
+	sales.css
+
+	/* DO */
+	base.css	
+
+
+- Lowercase names and scripted the medium as separator.  
+
+	/* DON'T */
+	baseIe7.css	
+
+	/* DO */
+	base-ie7.css
+
+
+- Component names from more than one word. 
+	
+	/* DON'T */
+	paymentMethods.css	
+
+	/* DO */
+	payment-methods.css
+
+
+
+- Name the components by name.  
+	
+	/* DO */
+	bookmarks.css
+
 
 ## General Formatting
 
@@ -199,7 +234,17 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Comments
 
-	(WIP)
+- Comment whenever necessary to explain the code.
+
+
+- Comment a property if required.
+
+
+- Comment magic numbers (values ​​with no apparent sense, explain how you arrived at that number) 
+
+
+- No prefixes Comment
+
 
 ## Tools
 
