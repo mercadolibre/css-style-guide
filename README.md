@@ -18,8 +18,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Table of contents
 
-- Folder Architecture 
-- File Names
+- [File Names](#file-names)
 - [General Formatting](#general-formatting)
 - Anatomy/Structure
 - [Selectors](#selectors)
@@ -27,11 +26,10 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 - [Comments](#comments)
 - Tools
 
-## Folder Architecture
-
-	(WIP)
 
 ## File Names
+
+	(contar como separar los archivos y por qué)
 
 - Css base: base.css (all clases and elements commons of the project)
 
