@@ -3,7 +3,7 @@
 MercadoLibre CSS Style Guide.
 
 ## Intro
-The main goal of this guide is to set standards for writing our CSS files and modules, helping the readability and maintainability of our code. By doing this, we can significantly reduce the time required to understand any front-end implementation.
+The main goal of this guide is to set standards for writing our CSS files and components, helping the readability and maintainability of our code. By doing this, we can significantly reduce the time required to understand any front-end implementation.
 
 By writing clean code, we are able to:
 
