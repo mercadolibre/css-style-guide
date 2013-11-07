@@ -205,7 +205,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ### Comments types
 
-	#### Component header
+	- Component header
 
 		Use this as a header for every stylesheet or component
 
@@ -215,9 +215,9 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 		  * @authors: pmontesano, hmammana, ndevalle
 		  * @description: write here a small description of what the component does, where is used, etc.
 		  */
-		 ```
+		```
 
-	#### Block separator
+	- Block separator
 
 		Use this format for meaningful separations of code.
 
@@ -226,7 +226,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 		---------------------------------------------------------------*/
 		```
 
-	#### Inline comment
+	- Inline comment
 
 		Use regular comment formatting for small descriptions of properties or rules.
 
