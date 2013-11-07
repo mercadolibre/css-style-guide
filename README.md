@@ -34,7 +34,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 - Css base: base.css (all clases and elements commons of the project)
 
 
-- Don't use project's name for css base. 
+- Don't name your files as your project. 
 
 	```css
 	/* DON'T */ 
@@ -48,7 +48,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	component-name.css
 	```
 
-- Lowercase names and scripted the medium as separator.  
+- Use lowercase.
 
 	```css
 	/* DON'T */
@@ -60,7 +60,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	base-ie7.css
 	```
 
-- Component names from more than one word. 
+- Separate words with Hyphen. Don't use camelCase or underline. 
 	
 	```css
 	/* DON'T */
@@ -73,12 +73,35 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	```
 
 
-- Name the components by name.  
+- Name your stylesheet as your component name.  
 	
 	```css
-	/* DO */
-	bookmarks.css
+	/* DON'T */
+	styles.css
+	main.css
+	mobile.css
+	full-page.css
+	meli.css
+	sandra.css /* ;) */
+	a.css
 	```
+
+
+	```css
+	/* DO */
+	payment-methods.css
+	message-boxes.css
+	categories.css
+	search-result.css
+	```
+
+- Extend your components adding a `.sufix` in the filename.
+
+	```css
+	payment-methods.css
+	payment-methods.mla.css
+	```
+
 
 ## General Formatting
 
