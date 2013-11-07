@@ -33,19 +33,41 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## File Names
 
-- Css base: base.css
+- Css base: base.css (all clases and elements commons of the project)
 
 
-- Don't use project's name for css base. Example sales.css
+- Don't use project's name for css base. 
+
+	/* DON'T */ 
+	sales.css
+
+	/* DO */
+	base.css	
 
 
-- Lowercase names and scripted the medium as separator. Example base-ie7.css
+- Lowercase names and scripted the medium as separator.  
+
+	/* DON'T */
+	baseIe7.css	
+
+	/* DO */
+	base-ie7.css
 
 
-- Component names from more than one word. Example payment-methods.css
+- Component names from more than one word. 
+	
+	/* DON'T */
+	paymentMethods.css	
+
+	/* DO */
+	payment-methods.css
 
 
-- Name the components by name. Example bookmarks.css
+
+- Name the components by name.  
+	
+	/* DO */
+	bookmarks.css
 
 
 ## General Formatting
