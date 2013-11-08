@@ -3,7 +3,7 @@
 MercadoLibre CSS Style Guide.
 
 ## Intro
-The main goal of this guide is to set standards for writing our CSS files and modules, helping the readability and maintainability of our code. By doing this, we can significantly reduce the time required to understand any front-end implementation.
+The main goal of this guide is to set standards for writing our CSS files and components, helping the readability and maintainability of our code. By doing this, we can significantly reduce the time required to understand any front-end implementation.
 
 By writing clean code, we are able to:
 
@@ -18,56 +18,78 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Table of contents
 
-- Folder Architecture 
-- File Names
-- [General Formatting](#formatting)
+- [File Names](#file-names)
+- [General Formatting](#general-formatting)
 - Anatomy/Structure
 - [Selectors](#selectors)
 - [Properties](#properties)
-- Comments
+- [Comments](#comments)
 - Tools
 
-## Folder Architecture
-
-	(WIP)
 
 ## File Names
+
+	(contar como separar los archivos y por qué)
 
 - Css base: base.css (all clases and elements commons of the project)
 
 
-- Don't use project's name for css base. 
+- Don't name your files as your project. 
 
+	```css
 	/* DON'T */ 
 	sales.css
+	checkout.css
+	```
 
+	```css
 	/* DO */
 	base.css	
+	component-name.css
+	```
 
-
-- Lowercase names and scripted the medium as separator.  
-
+- Separate words with Hyphen. Don't use camelCase or underline. 
+	
+	```css
 	/* DON'T */
 	baseIe7.css	
+	paymentMethods.css	
+	```
 
+	```css
 	/* DO */
 	base-ie7.css
+	payment-methods.css
+	```
 
-
-- Component names from more than one word. 
+- Name your stylesheet as your component name.  
 	
+	```css
 	/* DON'T */
-	paymentMethods.css	
+	styles.css
+	main.css
+	mobile.css
+	full-page.css
+	meli.css
+	sandra.css /* ;) */
+	a.css
+	```
 
+
+	```css
 	/* DO */
 	payment-methods.css
+	message-boxes.css
+	categories.css
+	search-result.css
+	```
 
+- Extend your components adding a `.sufix` in the filename.
 
-
-- Name the components by name.  
-	
-	/* DO */
-	bookmarks.css
+	```css
+	payment-methods.css
+	payment-methods.mla.css
+	```
 
 
 ## General Formatting
@@ -234,16 +256,74 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Comments
 
+- All your code should be documented.
+
+- Use single-line comment to add hints, notes, suggestions or warnings.
+
 - Comment whenever necessary to explain the code.
 
+- Don't comment on vendor-prefixes.
 
-- Comment a property if required.
+	```css
+	/* DON'T */
+	.selector {
+		-webkit-border-radius: 3px; /* Safari */
+	}
+	```
 
 
-- Comment magic numbers (values ​​with no apparent sense, explain how you arrived at that number) 
+### Comments types
+
+- **Component header**
+
+	Use this as a header for every stylesheet or component
+
+	```css
+	 /**
+	  * Component Name
+	  * @authors: pmontesano, hmammana, ndevalle
+	  * @description: small description of what the component does, where is used, etc.
+	  */
+	```
+
+- **Block separator**
+
+	Use this format for meaningful separations of code.
+
+	```css
+	/* Sidebar
+	---------------------------------------------------------------*/
+	```
+
+- **Inline comment**
+
+	Use regular comment formatting for small descriptions of properties or rules.
+
+	```css
+	.ch-price {
+    	line-height: 1em; /* 16px */
+	}
+	```
+
+	Always comment values that might seem "[magic](https://github.com/csswizardry/CSS-Guidelines#magic-numbers-and-absolutes)":
+
+	```css
+	.form-actions {
+	    margin-left: 175px; /* label width + 15px */
+	}
+	```
+
+	And properties that apparently make no sense:
+
+	```css
+	.payment-methods {
+	    display: inline-block;
+	    height: 20px; /* default value, exceptions added to each logo */
+        text-align: left; /* just in case the container has text-align:right */     
+	}
+	```
 
 
-- No prefixes Comment
 
 
 ## Tools
