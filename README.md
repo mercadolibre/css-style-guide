@@ -152,12 +152,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	}
 	```
 
-
-## Anatomy/Structure
-	
-	(WIP)
-
-
 ## Selectors
 
 - Only in English. 
