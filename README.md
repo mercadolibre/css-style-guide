@@ -20,7 +20,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - [File Names](#file-names)
 - [General Formatting](#general-formatting)
-- Anatomy/Structure
 - [Selectors](#selectors)
 - [Properties](#properties)
 - [Comments](#comments)
