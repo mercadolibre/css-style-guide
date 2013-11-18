@@ -23,27 +23,27 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 - [Selectors](#selectors)
 - [Properties](#properties)
 - [Comments](#comments)
-- Tools
+- [Tools](#tools)
 
 
 ## File Names
 
-- Don't name your files as your project. 
+- Don't name your files as your project.
 
 	```css
-	/* DON'T */ 
+	/* DON'T */
 	sales.css
 	checkout.css
 	```
 
 	```css
 	/* DO */
-	base.css	
+	base.css
 	component-name.css
 	```
 
-- Name your stylesheet as your component name.  
-	
+- Name your stylesheet as your component name.
+
 	```css
 	/* DON'T */
 	styles.css
@@ -63,12 +63,12 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	search-result.css
 	```
 
-- Separate the component name with Hyphen. Don't use camelCase or underline. 
-	
+- Separate the component name with Hyphen. Don't use camelCase or underline.
+
 	```css
 	/* DON'T */
-	message_boxes.css	
-	paymentMethods.css	
+	message_boxes.css
+	paymentMethods.css
 	```
 
 	```css
@@ -88,7 +88,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	```
 
 - Separate your modifiers stylesheets with **doble underscore**.
-	
+
 	Modifiers are stylesheets with styles that modify a component. For example: styles within mediaqueries for different screen resolution target or an specific browsers.
 
 	```css
@@ -154,7 +154,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Selectors
 
-- Only in English. 
+- Only in English.
 
 
 - Separate words with Hyphen. Don't use camelCase or underline.
@@ -168,7 +168,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	```css
 	/* DO */
 	.home-page
-	.registration-box 
+	.registration-box
 	```
 
 
@@ -198,7 +198,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 	_Tag selectors are not specific enough._
 
-	
+
 
 
 ## Properties
@@ -253,12 +253,12 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	margin: .5em;
 	```
 
-- Use Hexadecimal code for colors. 
+- Use Hexadecimal code for colors.
 
 	_(aca falta cuantos caracteres)_
 
 - Use rgba for background colors.
-	
+
 	_Take advantage of the opacity feature._
 
 - Always use `;` at the end of every declaration.
@@ -330,7 +330,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	.payment-methods {
 	    display: inline-block;
 	    height: 20px; /* default value, exceptions added to each logo */
-        text-align: left; /* just in case the container has text-align:right */     
+        text-align: left; /* just in case the container has text-align:right */
 	}
 	```
 
@@ -339,7 +339,16 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Tools
 
-	(WIP)
+- [Can I use...](http://caniuse.com/) Compatibility tables for support of HTML5, CSS3, SVG and more in desktop and mobile browsers.
+- [Code Beautifier](http://www.codebeautifier.com/) CSS Formatter and Optimiser
+- [CSSLint](http://csslint.net/) CSS Lint is an open source CSS code quality tool.
+- [Daturi](http://daturi.me/) Tool for convert images to Base64.
+- [Dust-Me Selectors](https://addons.mozilla.org/en-us/firefox/addon/dust-me-selectors/) is development tool that scans your website to find unused CSS selectors.
+- [Helium](https://github.com/geuis/helium-css) is a tool for discovering unused CSS across many pages on a web site.
+- [ProCSSor](http://procssor.com/) Advanced CSS Prettifier
+- [Spritemapper](http://yostudios.github.io/Spritemapper/) Command Line CSS Spritemap Generator
+- [The W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/)
+- [#CSSCreator](http://csscreator.com/properties) This is a list of CSS properties and selectors with the first browser versions that support them
 
 
 ## License
