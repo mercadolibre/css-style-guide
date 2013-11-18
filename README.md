@@ -89,7 +89,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 - Separate your modifiers stylesheets with **doble underscore**.
 	
-	Modifiers are stylesheets with styles that modify a component. For example: styles within mediaqueries for different screen resolution target or an specific browsers.
+	Modifiers are stylesheets with styles that modify a component. For example: styles within mediaqueries for different screen resolution target or specific browsers.
 
 	```css
 	/* DO */
