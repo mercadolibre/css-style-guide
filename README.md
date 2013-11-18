@@ -78,7 +78,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	payment-methods.css
 	```
 
-- Extend your components adding a `.sufix` in the filename.
+- Extend your components by adding a `.sufix` in the filename.
 
 	Extensions are specific styles that extend a given component.
 
@@ -88,9 +88,9 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	payment-methods.mla.css
 	```
 
-- Separate your modifiers stylesheets with doble underscore.
+- Separate your modifiers stylesheets with **doble underscore**.
 	
-	Modifiers are stylesheets with style that modify a component. For example: styles within mediaqueries for different screen resolution target or an specific browsers.
+	Modifiers are stylesheets with styles that modify a component. For example: styles within mediaqueries for different screen resolution target or an specific browsers.
 
 	```css
 	/* DO */
