@@ -29,11 +29,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## File Names
 
-	(contar como separar los archivos y por qué)
-
-- Css base: base.css (all clases and elements commons of the project)
-
-
 - Don't name your files as your project. 
 
 	```css
@@ -46,20 +41,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	/* DO */
 	base.css	
 	component-name.css
-	```
-
-- Separate words with Hyphen. Don't use camelCase or underline. 
-	
-	```css
-	/* DON'T */
-	baseIe7.css	
-	paymentMethods.css	
-	```
-
-	```css
-	/* DO */
-	base-ie7.css
-	payment-methods.css
 	```
 
 - Name your stylesheet as your component name.  
@@ -75,7 +56,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	a.css
 	```
 
-
 	```css
 	/* DO */
 	payment-methods.css
@@ -84,12 +64,46 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	search-result.css
 	```
 
-- Extend your components adding a `.sufix` in the filename.
+- Separate the component name with Hyphen. Don't use camelCase or underline. 
+	
+	```css
+	/* DON'T */
+	message_boxes.css	
+	paymentMethods.css	
+	```
 
 	```css
+	/* DO */
+	message-boxes.css
+	payment-methods.css
+	```
+
+- Extend your components adding a `.sufix` in the filename.
+
+	Extensions are specific styles that extend a given component.
+
+	```css
+	/* DO */
 	payment-methods.css
 	payment-methods.mla.css
 	```
+
+- Separate your modifiers stylesheets with doble underscore.
+	
+	Modifiers are stylesheets with style that modify a component. For example: styles within mediaqueries for different screen resolution target or an specific browsers.
+
+	```css
+	/* DO */
+	payment-methods__large.css /* mediaqueries for big screens */
+	payment-methods__small.css /* mediaqueries for mobile devices */
+	payment-methods__ie8.css /* "hacks" for ie8 */
+	```
+
+	_Note: use conditional comments in your html file for referencing IE stylesheets._
+
+
+- Use `base.css` as a name for your application basic styles, such as titles, typography, etc.
+
 
 
 ## General Formatting
@@ -184,10 +198,14 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 	_Declarations defined for an ID selector can't be reused._
 
+	(explicar como se formatean los ids si es que los vas a usar)
+
 
 - Avoid tag selectors unless is for extending another selector.
 
 	_Tag selectors are not specific enough._
+
+	
 
 
 ## Properties
