@@ -340,15 +340,15 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 ## Tools
 
 - [Can I use...](http://caniuse.com/) Compatibility tables for support of HTML5, CSS3, SVG and more in desktop and mobile browsers.
-- [Code Beautifier](http://www.codebeautifier.com/) CSS Formatter and Optimiser
-- [CSSLint](http://csslint.net/) CSS Lint is an open source CSS code quality tool.
-- [Daturi](http://daturi.me/) Tool for convert images to Base64.
+- [Code Beautifier](http://www.codebeautifier.com/) is a CSS Formatter and Optimiser
+- [CSSLint](http://csslint.net/) is an open source CSS code quality tool.
+- [Daturi](http://daturi.me/) is a tool for convert images to Base64.
 - [Dust-Me Selectors](https://addons.mozilla.org/en-us/firefox/addon/dust-me-selectors/) is development tool that scans your website to find unused CSS selectors.
 - [Helium](https://github.com/geuis/helium-css) is a tool for discovering unused CSS across many pages on a web site.
-- [ProCSSor](http://procssor.com/) Advanced CSS Prettifier
-- [Spritemapper](http://yostudios.github.io/Spritemapper/) Command Line CSS Spritemap Generator
+- [ProCSSor](http://procssor.com/) is an advanced CSS Prettifier.
+- [Spritemapper](http://yostudios.github.io/Spritemapper/) is a command line CSS spritemap generator
 - [The W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/)
-- [#CSSCreator](http://csscreator.com/properties) This is a list of CSS properties and selectors with the first browser versions that support them
+- [#CSSCreator](http://csscreator.com/properties) is a list of CSS properties and selectors with the first browser versions that support them
 
 
 ## License
