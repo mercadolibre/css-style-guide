@@ -63,6 +63,8 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	search-result.css
 	```
 
+- Use `base.css` as a name for your application basic styles, such as titles, typography, etc.
+
 - Separate the component name with Hyphen. Don't use camelCase or underline. 
 	
 	```css
@@ -99,9 +101,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	```
 
 	_Note: use conditional comments in your html file for referencing IE stylesheets._
-
-
-- Use `base.css` as a name for your application basic styles, such as titles, typography, etc.
 
 
 
@@ -191,8 +190,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 	_Declarations defined for an ID selector can't be reused._
 
-	(explicar como se formatean los ids si es que los vas a usar)
-
 
 - Avoid tag selectors unless is for extending another selector.
 
@@ -254,8 +251,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	```
 
 - Use Hexadecimal code for colors. 
-
-	_(aca falta cuantos caracteres)_
 
 - Use rgba for background colors.
 	
