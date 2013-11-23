@@ -340,7 +340,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 ## Tools
 
 - [Can I use...](http://caniuse.com/) Compatibility tables for support of HTML5, CSS3, SVG and more in desktop and mobile browsers.
-- [Code Beautifier](http://www.codebeautifier.com/) is a CSS Formatter and Optimiser
+- [CSS BEAUTIFIER](http://html.fwpolice.com/css/) Beautifies your CSS to be consistent and easy to read
 - [CSSLint](http://csslint.net/) is an open source CSS code quality tool.
 - [Daturi](http://daturi.me/) is a tool for convert images to Base64.
 - [Dust-Me Selectors](https://addons.mozilla.org/en-us/firefox/addon/dust-me-selectors/) is development tool that scans your website to find unused CSS selectors.
