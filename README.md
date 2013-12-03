@@ -63,8 +63,10 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	search-result.css
 	```
 
-- Separate the component name with Hyphen. Don't use camelCase or underline.
+- Use `base.css` as a name for your application basic styles, such as titles, typography, etc.
 
+- Separate the component name with Hyphen. Don't use camelCase or underline. 
+	
 	```css
 	/* DON'T */
 	message_boxes.css
@@ -99,9 +101,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	```
 
 	_Note: use conditional comments in your html file for referencing IE stylesheets._
-
-
-- Use `base.css` as a name for your application basic styles, such as titles, typography, etc.
 
 
 
@@ -191,8 +190,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 	_Declarations defined for an ID selector can't be reused._
 
-	(explicar como se formatean los ids si es que los vas a usar)
-
 
 - Avoid tag selectors unless is for extending another selector.
 
@@ -254,8 +251,6 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	```
 
 - Use Hexadecimal code for colors.
-
-	_(aca falta cuantos caracteres)_
 
 - Use rgba for background colors.
 
@@ -339,16 +334,16 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ## Tools
 
-- [Can I use...](http://caniuse.com/) Compatibility tables for support of HTML5, CSS3, SVG and more in desktop and mobile browsers.
+- [Can I use...](http://caniuse.com/) Compatibility tables for support for HTML5, CSS3, SVG and more in desktop and mobile browsers.
 - [CSS BEAUTIFIER](http://html.fwpolice.com/css/) Beautifies your CSS to be consistent and easy to read
 - [CSSLint](http://csslint.net/) is an open source CSS code quality tool.
-- [Daturi](http://daturi.me/) is a tool for convert images to Base64.
-- [Dust-Me Selectors](https://addons.mozilla.org/en-us/firefox/addon/dust-me-selectors/) is development tool that scans your website to find unused CSS selectors.
+- [Daturi](http://daturi.me/) is a tool for converting images to Base64.
+- [Dust-Me Selectors](https://addons.mozilla.org/en-us/firefox/addon/dust-me-selectors/) is a development tool that scans your website to find unused CSS selectors.
 - [Helium](https://github.com/geuis/helium-css) is a tool for discovering unused CSS across many pages on a web site.
 - [ProCSSor](http://procssor.com/) is an advanced CSS Prettifier.
-- [Spritemapper](http://yostudios.github.io/Spritemapper/) is a command line CSS spritemap generator
+- [Spritemapper](http://yostudios.github.io/Spritemapper/) is a command line CSS spritemap generator.
 - [The W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/)
-- [#CSSCreator](http://csscreator.com/properties) is a list of CSS properties and selectors with the first browser versions that support them
+- [#CSSCreator](http://csscreator.com/properties) is a list of CSS properties and selectors with the first browser versions that support them.
 
 
 ## License
