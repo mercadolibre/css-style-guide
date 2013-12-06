@@ -108,9 +108,7 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 
 ### Spacing
 
-- Use 4 spaces for indentation. Don't use tab.
-	
-	[Follow these instructions for Sublime Text 2](https://github.com/mercadolibre/css-style-guide/wiki/How-to-configure-tab-=-4-spaces-on-Sublime-Text-2).
+- Use 4 spaces for indentation. Don't use tab. [Follow these instructions to configure Sublime Text 2](https://github.com/mercadolibre/css-style-guide/wiki/How-to-configure-tab-=-4-spaces-on-Sublime-Text-2).
 
 
 - Don't mix spaces and tabs.
