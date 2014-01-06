@@ -250,6 +250,20 @@ by [Addy Osmani](http://addyosmani.com/blog/javascript-style-guides-and-beautifi
 	margin: .5em;
 	```
 
+- Quotes: use always simple quotation marks.
+
+	```css
+	/* DON'T */
+	background-image: url(sprite.png);
+	background-image: url("sprite.png");
+	```
+
+	```css
+	/* DO */
+	background-image: url('sprite.png');
+	```
+
+
 - Use Hexadecimal code for colors.
 
 - Use rgba for background colors.
