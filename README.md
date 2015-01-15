@@ -349,4 +349,4 @@ wrote it." by [Addy Osmani]
 ## License
 
 Licensed under the MIT license.  
-Copyright (c) 2013 [MercadoLibre, Inc](http://www.mercadolibre.com/).
+Copyright (c) 2015 [MercadoLibre, Inc](http://www.mercadolibre.com/).
