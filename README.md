@@ -247,7 +247,19 @@ wrote it." by [Addy Osmani]
     background-image: url('sprite.png');
     ```
 
-+ Use hexadecimal notation for colors.
++ Use lowercase for hexadecimal values, and shorthand notation when allowed.
+
+    ```css
+    /* DON'T */
+    color: #111111;
+    background: #F3F3F3;
+    ```
+
+    ```css
+    /* DO */
+    color: #111;
+    background: #f3f3f3;
+    ```
 
 + Use rgba for background colors.
 
