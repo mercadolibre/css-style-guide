@@ -1,4 +1,4 @@
-# SCSS (Sass) Style Guide
+# CSS Style Guide
 
 ## Work in progress
 
