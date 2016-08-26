@@ -1,5 +1,7 @@
 # CSS Style Guide
 
+MercadoLibre CSS Style Guide.
+
 ## Table of contents
 
 1. [Introduction](#introduction)
