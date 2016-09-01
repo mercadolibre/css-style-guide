@@ -22,7 +22,7 @@
         "border-zero": [
             1,
             {
-                "convention": '0'
+                "convention": "0"
             }
         ],
         "brace-style": [
