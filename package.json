@@ -1,6 +1,6 @@
 {
   "name": "css-style-guide",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Configuration for CSS linters",
   "main": "index.js",
   "repository": {
