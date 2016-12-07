@@ -872,4 +872,4 @@ and many other awesome people!
 
 ## License
 
-© 2013-2016 MercadoLibre. Licensed under the [MIT license](license).
+© 2013-2016 Mercado Libre. Licensed under the [MIT license](license).
