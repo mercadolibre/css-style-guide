@@ -1,6 +1,6 @@
 {
   "name": "css-style-guide",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Configuration for CSS linters",
   "main": "index.js",
   "repository": {
@@ -15,7 +15,7 @@
     "scss",
     "sass"
   ],
-  "author": "Cristian Escudero <cristian.escudero@mercadolibre.com>",
+  "author": "Mercado Libre <oss@mercadolibre.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mercadolibre/css-style-guide/issues"
