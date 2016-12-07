@@ -95,8 +95,7 @@ rules:
     no-url-protocols: 0
     no-vendor-prefixes:
         - 1
-        - additional-identifiers: []
-          excluded-identifiers: []
+        - ignore-non-standard: true
     no-warn: 0
     one-declaration-per-line: 1
     placeholder-in-extend: 0
