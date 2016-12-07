@@ -851,8 +851,8 @@ accidental removals.
 // DO
 
 ////
-// 1. Modify default font smoothing mode. Non-standard properties,
-//    need explicit use of vendor prefixes.
+// 1. Modify default font smoothing mode. Non-standard properties;
+//    explicit use of vendor prefixes is required.
 //
 
 .foo {
