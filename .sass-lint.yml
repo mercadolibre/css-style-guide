@@ -102,7 +102,6 @@ rules:
     placeholder-name-format:
         - 0
         - convention: hyphenatedlowercase
-
     property-sort-order:
         - 0
         - ignore-custom-properties: false
