@@ -14,6 +14,7 @@ MercadoLibre CSS Style Guide.
 8. [At-rules](#at-rules)
 9. [Comments](#comments)
 10. [Appendix: Sass](#appendix-sass)
+11. [Appendix: Vendor prefixes](#appendix-vendor-prefixes)
 
 ## Introduction
 
@@ -519,7 +520,7 @@ applies to any other rule.
     src: local('Foobar'),
         url('../webfonts/foobar.woff') format('woff');
     font-weight: 700;
-    font-style: normal;    
+    font-style: normal;
 }
 ```
 
@@ -684,24 +685,66 @@ When appropriate, break code into meaningful sections.
 
 ## Appendix: Sass
 
-### File extension
+### Syntax
 
-Use `.scss`, don’t use `.sass`. Because SCSS is similar to CSS syntax than Sass.
+Always use the
+[SCSS syntax](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#syntax).
+This requires the use of the `.scss` file extension.
 
-### Nested
+### Variables
 
-- Nested Pseudo Classes and Pseudo Elements next.
-- Avoid Nested selector. If necessary 3 nested max.
+- Use variables —at least— for colors and font size.
+- Use `!default` only when a variable it’s likely to be modified.
+
+### At-rules
+
+#### `@import`
+
+- Define one `@import` declaration per line.
+- Quote file names using single quotes.
+- Don’t include the leading underscore when importing a *partial*.
+- Don’t include the `.scss` file extension.
 
 ```scss
 // DON'T
 
-.selector1 {
-    .selector2 {
-        .selector3 {
-            .selector4 {
-                .selector5 {
-                    // ...
+@import "_foo.scss", "_bar.scss";
+```
+
+```scss
+// DO
+
+@import 'foo';
+@import 'bar';
+```
+
+#### `@mixin`
+
+Use a `@mixin` whenever you want to generate reusable sections of code.
+
+#### `@extend`
+
+Avoid using `@extend`. Try to use a `@mixin` instead.
+
+### Nested rules
+
+- Only use nesting when absolutely necessary.
+- Never nest more than three levels deep.
+- Separate each nested rule by a blank line.
+
+```scss
+// DON'T
+
+.foo {
+    color: #000;
+    .bar {
+        color: #222;
+        .baz {
+            color: #444;
+            .qux {
+                color: #666;
+                .quux {
+                    color: #999;
                 }
             }
         }
@@ -712,31 +755,27 @@ Use `.scss`, don’t use `.sass`. Because SCSS is similar to CSS syntax than Sas
 ```scss
 // DO
 
-.selector1 {
-    .selector2 {
-        .selector3 {
-            // No more.
+.baz {
+    color: #444;
+
+    .qux {
+        color: #666;
+
+        .quux {
+            color: #999;
         }
     }
 }
 ```
 
-### Nested with `&`
-
-Try to avoid use `&` for nested selectors.
-
-Although it may be very useful to use at first, but ultimately makes the code
-more difficult to read. You have to mentally calculate the corresponding
-selector and becomes more complicated in nesting.
+Never nest inside empty rules.
 
 ```scss
 // DON'T
 
-.selector1 {
-    &-selector2 {
-        &-selector3 {
-            // ...
-        }
+.foo {
+    .bar {
+        color: #222;
     }
 }
 ```
@@ -744,68 +783,84 @@ selector and becomes more complicated in nesting.
 ```scss
 // DO
 
-.selector1 {
-    &:hover {
-        // ...
-    }
-
-    &:focus {
-        // ...
-    }
-
-    &:after {
-        // ...
-    }
-
-    &:before {
-        // ...
-    }
+.foo .bar {
+    color: #222;
 }
 ```
 
-### Variables
-
-- Use variables at least for colors and font size.
-- Use `!default` only when a variable it's likely to be modified.
-
-### Mixins
-
-Mixins allow you to reuse styles (properties and even selectors) without having
-to copy and paste them whenever you want to use. They are the key to
-reusability and DRY components.
+Never generate compound names using the parent selector.
 
 ```scss
 // DON'T
 
-.clearfix {
-    content: '';
-    display: table;
-    clear: both;
+.foo {
+    color: #000;
+
+    &__bar {
+        color: #222;
+    }
+
+    &--baz {
+        color: #444;
+    }
 }
 ```
 
 ```scss
 // DO
 
-@mixin clearfix() {
-    &:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
+.foo {
+    color: #000;
+}
+
+.foo__bar {
+    color: #222;
+}
+
+.foo--baz {
+    color: #444;
 }
 ```
 
-### Prefixes
+## Appendix: Vendor prefixes
 
-Vendor prefixes are sensitive in time, browsers are updated all the time and
-these may change. Use Autoprefixer is the best option for these cases.
-Also as an alternative (if not got autoprefixer) is used `@mixin`.
+Never use vendor prefixes directly in the source code.
 
-### Extend
+- Use [Autoprefixer](https://github.com/postcss/autoprefixer).
+- If Autoprefixer is not available, you could use a `@mixin`.
 
-Avoid `@extend` because it has unintuitive. Its use tends to be confusing and
-can bring trouble maintaining scalable and understandable code.
+### Exceptions
+
+When certain property is non-standard, Autoprefixer will not perform any action.
+
+In those situations always leave a comment explaining why you’re using that
+property; this will generate code easier to understand and prevent
+accidental removals.
+
+```scss
+// DON'T
+
+.foo {
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+```
+
+```scss
+// DO
+
+////
+// 1. Modify default font smoothing mode. Non-standard properties,
+//    need explicit use of vendor prefixes.
+//
+
+.foo {
+    color: #000;
+    -webkit-font-smoothing: antialiased; // 1
+    -moz-osx-font-smoothing: grayscale; // 1
+}
+```
 
 ## Contributing
 
