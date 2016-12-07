@@ -1,8 +1,8 @@
 files:
-  include: '**/*.scss'
+    include: '**/*.scss'
 options:
-  formatter: stylish
-  merge-default-rules: false
+    formatter: stylish
+    merge-default-rules: false
 rules:
     attribute-quotes:
         - 1
