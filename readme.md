@@ -1,6 +1,6 @@
 # CSS Style Guide
 
-MercadoLibre CSS Style Guide.
+Mercado Libre CSS Style Guide.
 
 ## Table of contents
 
