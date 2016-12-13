@@ -1,13 +1,15 @@
 {
   "name": "css-style-guide",
-  "version": "0.2.0",
-  "description": "Configuration for CSS linters",
+  "version": "1.0.0",
+  "description": "Mercado Libre CSS Style Guide",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mercadolibre/css-style-guide.git"
   },
   "keywords": [
+    "css-style-guide",
+    "sass-style-guide",
     "scss-lint",
     "linter",
     "css",
