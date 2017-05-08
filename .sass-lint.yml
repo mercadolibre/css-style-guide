@@ -16,7 +16,7 @@ rules:
     brace-style:
         - 1
         - style: '1tbs'
-          allow-single-line: false
+          allow-single-line: true
     class-name-format:
         - 1
         - allow-leading-underscore: false
