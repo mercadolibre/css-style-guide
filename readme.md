@@ -15,6 +15,7 @@ Mercado Libre CSS Style Guide.
 9. [Comments](#comments)
 10. [Appendix: Sass](#appendix-sass)
 11. [Appendix: Vendor prefixes](#appendix-vendor-prefixes)
+12. [Appendix: Linter](#appendix-linter)
 
 ## Introduction
 
@@ -861,6 +862,13 @@ accidental removals.
   -moz-osx-font-smoothing: grayscale; // 1
 }
 ```
+
+## Appendix: Linter
+
+Remembering all this might be hard, that's why we use
+[Sass Lint](https://github.com/sasstools/sass-lint).
+The [`.sasslintrc`](.sasslintrc) configuration file is
+available in this repository. Use it!
 
 ## Contributing
 
