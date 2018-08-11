@@ -51,7 +51,7 @@ multicultural company and not all of us speak the same language.
 ## Whitespace
 
 - Use Unix newline character: `LF`.
-- Use four spaces per indentation level.
+- Use two spaces per indentation level.
 - Remove all trailing whitespace.
 - Always end files with a newline.
 - Use only one blank line as a separator.
@@ -61,7 +61,7 @@ multicultural company and not all of us speak the same language.
 
 .foo {¤
 ——··font-weight: 900;¤
-————color: #222;····¤¬
+——color: #222;····¤¬
 }——¤¬
 ```
 
@@ -69,8 +69,8 @@ multicultural company and not all of us speak the same language.
 /* DO */
 
 .foo {¬
-····font-weight: 900;¬
-····color: #222;¬
+··font-weight: 900;¬
+··color: #222;¬
 }¬
 ¬
 ```
@@ -92,7 +92,7 @@ whitespace it’s important you can
 
 .foo
 {
-    color: #222;
+  color: #222;
 }
 .bar{color: #999;}
 ```
@@ -101,11 +101,11 @@ whitespace it’s important you can
 /* DO */
 
 .foo {
-    color: #222;
+  color: #222;
 }
 
 .bar {
-    color: #999;
+  color: #999;
 }
 ```
 
@@ -143,31 +143,31 @@ This will make your code less flexible and introduce a maintenance burden.
 /* DON'T */
 
 .foo {
-    color: #222;
+  color: #222;
 }
 
-    .foo__bar {
-        color: #444;
-    }
+  .foo__bar {
+    color: #444;
+  }
 
-        .foo__baz {
-            color: #666;
-        }
+    .foo__baz {
+      color: #666;
+    }
 ```
 
 ```css
 /* DO */
 
 .foo {
-    color: #222;
+  color: #222;
 }
 
 .foo__bar {
-    color: #444;
+  color: #444;
 }
 
 .foo__baz {
-    color: #666;
+  color: #666;
 }
 ```
 
@@ -182,12 +182,12 @@ This will make your code less flexible and introduce a maintenance burden.
 /* DON'T */
 
 .foo {
-    font-weight:900;
-    color : #222 ;
+  font-weight:900;
+  color : #222 ;
 }
 
 .bar {
-    padding:10px; margin:0
+  padding:10px; margin:0
 }
 ```
 
@@ -195,13 +195,13 @@ This will make your code less flexible and introduce a maintenance burden.
 /* DO */
 
 .foo {
-    font-weight: 900;
-    color: #222;
+  font-weight: 900;
+  color: #222;
 }
 
 .bar {
-    padding: 10px;
-    margin: 0;
+  padding: 10px;
+  margin: 0;
 }
 ```
 
@@ -214,11 +214,11 @@ This will make your code less flexible and introduce a maintenance burden.
 /* DON'T */
 
 .foo, .bar {
-    color: #222;
+  color: #222;
 }
 
 .foobar[attr=val] {
-    color: #444;
+  color: #444;
 }
 ```
 
@@ -227,11 +227,11 @@ This will make your code less flexible and introduce a maintenance burden.
 
 .foo,
 .bar {
-    color: #222;
+  color: #222;
 }
 
 .foobar[attr='val'] {
-    color: #444;
+  color: #444;
 }
 ```
 
@@ -243,7 +243,7 @@ Never use id selectors.
 /* DON'T */
 
 #foo {
-    color: #222;
+  color: #222;
 }
 ```
 
@@ -251,7 +251,7 @@ Never use id selectors.
 /* DO */
 
 .foo {
-    color: #222;
+  color: #222;
 }
 ```
 
@@ -261,7 +261,7 @@ Avoid type selectors as much as you can.
 /* DON'T */
 
 .foo h1 {
-    color: #222;
+  color: #222;
 }
 ```
 
@@ -269,7 +269,7 @@ Avoid type selectors as much as you can.
 /* DO */
 
 .foo-heading {
-    color: #222;
+  color: #222;
 }
 ```
 
@@ -281,7 +281,7 @@ Don’t specify length units for zero values.
 /* DON'T */
 
 .foo {
-    padding: 0px 20px;
+  padding: 0px 20px;
 }
 ```
 
@@ -289,7 +289,7 @@ Don’t specify length units for zero values.
 /* DO */
 
 .foo {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 ```
 
@@ -299,8 +299,8 @@ Always specify leading zeros in fractional numbers.
 /* DON'T */
 
 .foo {
-    top: .25%;
-    left: -.5%;
+  top: .25%;
+  left: -.5%;
 }
 ```
 
@@ -308,8 +308,8 @@ Always specify leading zeros in fractional numbers.
 /* DO */
 
 .foo {
-    top: 0.25%;
-    left: -0.5%;
+  top: 0.25%;
+  left: -0.5%;
 }
 ```
 
@@ -319,8 +319,8 @@ Use lowercase for hexadecimal values, and shorthand notation when allowed.
 /* DON'T */
 
 .foo {
-    background: #ffffff;
-    border-color: #F3F3F3;
+  background: #ffffff;
+  border-color: #F3F3F3;
 }
 ```
 
@@ -328,8 +328,8 @@ Use lowercase for hexadecimal values, and shorthand notation when allowed.
 /* DO */
 
 .foo {
-    background: #fff;
-    border-color: #f3f3f3;
+  background: #fff;
+  border-color: #f3f3f3;
 }
 ```
 
@@ -339,7 +339,7 @@ Quote URL values using single quotes.
 /* DON'T */
 
 .foo {
-    background: url(../images/image.png);
+  background: url(../images/image.png);
 }
 ```
 
@@ -347,7 +347,7 @@ Quote URL values using single quotes.
 /* DO */
 
 .foo {
-    background: url('../images/foobar.png');
+  background: url('../images/foobar.png');
 }
 ```
 
@@ -357,7 +357,7 @@ Quote font family names that contain whitespace using single quotes.
 /* DON'T */
 
 .foo {
-    font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 ```
 
@@ -365,7 +365,7 @@ Quote font family names that contain whitespace using single quotes.
 /* DO */
 
 .foo {
-    font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 ```
 
@@ -376,8 +376,8 @@ parenthesis of a function.
 /* DON'T */
 
 .foo {
-    width: calc( 20% - 5px );
-    background: rgba( 0, 0, 0, 0.6 );
+  width: calc( 20% - 5px );
+  background: rgba( 0, 0, 0, 0.6 );
 }
 ```
 
@@ -385,8 +385,8 @@ parenthesis of a function.
 /* DO */
 
 .foo {
-    width: calc(20% - 5px);
-    background: rgba(0, 0, 0, 0.6);
+  width: calc(20% - 5px);
+  background: rgba(0, 0, 0, 0.6);
 }
 ```
 
@@ -396,8 +396,8 @@ Include a space after each comma in comma-separated values.
 /* DON'T */
 
 .foo {
-    font-family: 'Times New Roman',Times,serif;
-    background: rgba(0,0,0,0.6);
+  font-family: 'Times New Roman',Times,serif;
+  background: rgba(0,0,0,0.6);
 }
 ```
 
@@ -405,8 +405,8 @@ Include a space after each comma in comma-separated values.
 /* DO */
 
 .foo {
-    font-family: 'Times New Roman', Times, serif;
-    background: rgba(0, 0, 0, 0.6);
+  font-family: 'Times New Roman', Times, serif;
+  background: rgba(0, 0, 0, 0.6);
 }
 ```
 
@@ -419,9 +419,9 @@ Long comma-separated set of values should be arranged across multiple lines.
 /* DON'T */
 
 .foo {
-    box-shadow: inset 0 0 4px rgba(17, 17, 17, 0.6), 0 0 8px rgba(0, 0, 0, 0.6);
-    background: url('../images/foobar.png') repeat-y,
-    url('../images/barfoo.png') repeat-x;
+  box-shadow: inset 0 0 4px rgba(17, 17, 17, 0.6), 0 0 8px rgba(0, 0, 0, 0.6);
+  background: url('../images/foobar.png') repeat-y,
+  url('../images/barfoo.png') repeat-x;
 }
 ```
 
@@ -429,10 +429,10 @@ Long comma-separated set of values should be arranged across multiple lines.
 /* DO */
 
 .foo {
-    box-shadow: inset 0 0 4px rgba(17, 17, 17, 0.6),
-        0 0 8px rgba(0, 0, 0, 0.6);
-    background: url('../images/foobar.png') repeat-y,
-        url('../images/barfoo.png') repeat-x;
+  box-shadow: inset 0 0 4px rgba(17, 17, 17, 0.6),
+    0 0 8px rgba(0, 0, 0, 0.6);
+  background: url('../images/foobar.png') repeat-y,
+    url('../images/barfoo.png') repeat-x;
 }
 ```
 
@@ -444,10 +444,10 @@ When possible, use shorthand properties.
 /* DON'T */
 
 .foo {
-    padding-top: 0;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    padding-left: 10px;
+  padding-top: 0;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
 }
 ```
 
@@ -455,7 +455,7 @@ When possible, use shorthand properties.
 /* DO */
 
 .foo {
-    padding: 0 10px 20px;
+  padding: 0 10px 20px;
 }
 ```
 
@@ -466,8 +466,8 @@ explicit value.
 /* DON'T */
 
 .foo {
-    background: white;
-    border-width: medium;
+  background: white;
+  border-width: medium;
 }
 ```
 
@@ -475,8 +475,8 @@ explicit value.
 /* DO */
 
 .foo {
-    background: #fff;
-    border-width: 4px;
+  background: #fff;
+  border-width: 4px;
 }
 ```
 
@@ -486,7 +486,7 @@ Never use `!important` to resolve a specificity issue.
 /* DON'T */
 
 .foo {
-    float: left !important;
+  float: left !important;
 }
 ```
 
@@ -494,7 +494,7 @@ Never use `!important` to resolve a specificity issue.
 /* DO */
 
 .foo.bar {
-    float: left;
+  float: left;
 }
 ```
 
@@ -507,20 +507,20 @@ applies to any other rule.
 /* DON'T */
 
 @font-face {
-    font-family:Foobar;
-    src:local(Foobar),url(../webfonts/foobar.woff) format(woff);
-    font-weight:bold;font-style:normal}
+  font-family:Foobar;
+  src:local(Foobar),url(../webfonts/foobar.woff) format(woff);
+  font-weight:bold;font-style:normal}
 ```
 
 ```css
 /* DO */
 
 @font-face {
-    font-family: 'Foobar';
-    src: local('Foobar'),
-        url('../webfonts/foobar.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Foobar';
+  src: local('Foobar'),
+    url('../webfonts/foobar.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 ```
 
@@ -535,13 +535,13 @@ Nested rules inside at-rules should be properly indented.
 @media(min-width:768px){
 
 .foo {
-    font-weight: 900;
-    color: #222;
+  font-weight: 900;
+  color: #222;
 }
 
 .bar {
-    padding: 10px;
-    margin: 0;
+  padding: 10px;
+  margin: 0;
 }
 
 }
@@ -551,15 +551,15 @@ Nested rules inside at-rules should be properly indented.
 /* DO */
 
 @media (min-width: 768px) {
-    .foo {
-        font-weight: 900;
-        color: #222;
-    }
+  .foo {
+    font-weight: 900;
+    color: #222;
+  }
 
-    .bar {
-        padding: 10px;
-        margin: 0;
-    }
+  .bar {
+    padding: 10px;
+    margin: 0;
+  }
 }
 ```
 
@@ -617,9 +617,9 @@ To avoid interfering with the code reading, try to use “reference comments”.
  */
 
 .foo {
-    padding: 0; /* 1 */
-    background: #222; /* 2 */
-    background: rgba(0, 0, 0, 0.6);
+  padding: 0; /* 1 */
+  background: #222; /* 2 */
+  background: rgba(0, 0, 0, 0.6);
 }
 ```
 
@@ -632,9 +632,9 @@ To avoid interfering with the code reading, try to use “reference comments”.
 //
 
 .foo {
-    padding: 0; // 1
-    background: #222; // 2
-    background: rgba(0, 0, 0, 0.6);
+padding: 0; // 1
+background: #222; // 2
+background: rgba(0, 0, 0, 0.6);
 }
 ```
 
@@ -647,8 +647,8 @@ To avoid interfering with the code reading, try to use “reference comments”.
 
 ```css
 .foo {
-    /* TODO: add fallback. */
-    background: rgba(0, 0, 0, 0.6);
+  /* TODO: add fallback. */
+  background: rgba(0, 0, 0, 0.6);
 }
 ```
 
@@ -656,8 +656,8 @@ To avoid interfering with the code reading, try to use “reference comments”.
 
 ```scss
 .foo {
-    // TODO: add fallback.
-    background: rgba(0, 0, 0, 0.6);
+  // TODO: add fallback.
+  background: rgba(0, 0, 0, 0.6);
 }
 ```
 
@@ -736,19 +736,19 @@ Avoid using `@extend`. Try to use a `@mixin` instead.
 // DON'T
 
 .foo {
-    color: #000;
-    .bar {
-        color: #222;
-        .baz {
-            color: #444;
-            .qux {
-                color: #666;
-                .quux {
-                    color: #999;
-                }
-            }
+  color: #000;
+  .bar {
+    color: #222;
+    .baz {
+      color: #444;
+      .qux {
+        color: #666;
+        .quux {
+          color: #999;
         }
+      }
     }
+  }
 }
 ```
 
@@ -756,15 +756,15 @@ Avoid using `@extend`. Try to use a `@mixin` instead.
 // DO
 
 .baz {
-    color: #444;
+  color: #444;
 
-    .qux {
-        color: #666;
+  .qux {
+    color: #666;
 
-        .quux {
-            color: #999;
-        }
+    .quux {
+      color: #999;
     }
+  }
 }
 ```
 
@@ -774,9 +774,9 @@ Never nest inside empty rules.
 // DON'T
 
 .foo {
-    .bar {
-        color: #222;
-    }
+  .bar {
+    color: #222;
+  }
 }
 ```
 
@@ -784,7 +784,7 @@ Never nest inside empty rules.
 // DO
 
 .foo .bar {
-    color: #222;
+  color: #222;
 }
 ```
 
@@ -794,15 +794,15 @@ Never generate compound names using the parent selector.
 // DON'T
 
 .foo {
-    color: #000;
+  color: #000;
 
-    &__bar {
-        color: #222;
-    }
+  &__bar {
+    color: #222;
+  }
 
-    &--baz {
-        color: #444;
-    }
+  &--baz {
+    color: #444;
+  }
 }
 ```
 
@@ -810,15 +810,15 @@ Never generate compound names using the parent selector.
 // DO
 
 .foo {
-    color: #000;
+  color: #000;
 }
 
 .foo__bar {
-    color: #222;
+  color: #222;
 }
 
 .foo--baz {
-    color: #444;
+  color: #444;
 }
 ```
 
@@ -841,9 +841,9 @@ accidental removals.
 // DON'T
 
 .foo {
-    color: #000;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 ```
 
@@ -856,9 +856,9 @@ accidental removals.
 //
 
 .foo {
-    color: #000;
-    -webkit-font-smoothing: antialiased; // 1
-    -moz-osx-font-smoothing: grayscale; // 1
+  color: #000;
+  -webkit-font-smoothing: antialiased; // 1
+  -moz-osx-font-smoothing: grayscale; // 1
 }
 ```
 
@@ -872,4 +872,4 @@ and many other awesome people!
 
 ## License
 
-© 2013-2017 Mercado Libre. Licensed under the [MIT license](license).
+© 2013-2019 Mercado Libre. Licensed under the [MIT license](license).
